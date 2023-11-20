@@ -45,13 +45,13 @@ public class MainApp {
          System.out.println();
       }
 
-      List<Car> cars = userService.getUserByCar("model", 458);
-      for (Car car : cars) {
+      List<User> usersWithCar = userService.getUserByCar("model", 458);
+      for (User user : usersWithCar) {
          System.out.println("Имеет машину model,458:");
-         System.out.println("Id = "+car.getUser().getId());
-         System.out.println("First Name = "+car.getUser().getFirstName());
-         System.out.println("Last Name = "+car.getUser().getLastName());
-         System.out.println("Email = "+car.getUser().getEmail());
+         System.out.println("Id = "+ user.getId());
+         System.out.println("First Name = "+user.getFirstName());
+         System.out.println("Last Name = "+user.getLastName());
+         System.out.println("Email = "+user.getEmail());
 
          System.out.println();
       }
